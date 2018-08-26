@@ -132,4 +132,11 @@
 
   </rules>
 
+
+  <!-- backend only -->
+  <after css:theme-children="head" method="raw">
+    <link rel="stylesheet" type="text/css" href="++plone++apc.content/backend.css" />
+  </after>
+
+
 </rules>
