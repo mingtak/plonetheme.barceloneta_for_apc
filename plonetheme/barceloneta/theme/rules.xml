@@ -6,11 +6,8 @@
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
  <xi:include href="backend.xml" />
-
  <!-- Only theme front end pages -->
  <rules css:if-content="body.frontend#visual-portal-wrapper">
-
-
   <theme href="index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
 
@@ -70,7 +67,6 @@
         </div>
       </footer>
     </div>
-
   </replace>
 
   <!-- Alert message -->
@@ -121,6 +117,8 @@
 
     <link rel="stylesheet" type="text/css" href="++plone++apc.content/custom.css" />
   </after>
+
+  <drop css:content=".site-apc" />
 
  </rules>
 </rules>
